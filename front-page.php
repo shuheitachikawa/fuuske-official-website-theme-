@@ -2,7 +2,7 @@
 
 
   
-  <!-- メイン写真セクション -->
+  <!-- メイン写真セクションtest1 -->
   <section class = "main-visual">
     <div class="main-image-area">
       <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" class="main-img">
