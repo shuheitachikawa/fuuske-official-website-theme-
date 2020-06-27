@@ -43,39 +43,56 @@
       //   </ul> -->
       <a class="nav-item" id="more-button-js" style="text-align:center">MORE</a>
     </nav>
-    
-
-
-          <!-- ヘッダーサブメニュー -->
-
-
-    
-
 
   </header>
 
-  <div class="header-sp">
-    <h1 class="title-sp">Fuuske Official Website</h1>
-  </div>
-
-
-  <nav class="sub-nav" id="sub-nav-js">
+  <div class="header-spmain">
+    <nav class="global-nav">
       <?php
       wp_nav_menu(
         array(
-          'theme_location' => 'place_sub',
+          'theme_location' => 'place_global',
           'container' => false,
         )
       );
       ?>
-
-      <ul class="sub-nav-icons">
-        <li class="sub-nav-icon"><a class="fab fa-facebook fa-3x" href="https://rua.jp/f/621195244594793" target=”_blank”></a></li>
-        <li class="sub-nav-icon"><a class="fab fa-instagram fa-3x" href="https://rua.jp/i/fuuske_life" target=”_blank”></a></li>
-        <li class="sub-nav-icon"><a class="fab fa-youtube fa-3x" href="https://www.youtube.com/channel/UCqmZWnDKLpt3QqZvcz6SkLg" target=”_blank”></a></li>
-      </ul>
-
-      <div class="close-img-area">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gnv_close.png" class="sub-nav-close" id="sub-nav-close-js">
-      </div>
+      <!-- <ul class="nav-menu">
+      //   <li><a class="nav-item">Top</a></li>
+      //   <li><a class="nav-item">News</a></li>
+      //   <li><a class="nav-item">Video</a></li>
+      //   <li><a class="nav-item">Blog</a></li>
+      //   <li><a class="nav-item">Goods</a></li>
+      //   <li><a class="nav-item">More</a></li>
+      //   </ul> -->
+      <a class="nav-item" id="more-button-js" style="text-align:center">MORE</a>
     </nav>
+
+    </div>
+  
+  <div class="header-sp">
+    <h1 class="title-sp">Fuuske Official Website</h1>
+  </div>
+  
+  
+  <!-- ヘッダーサブメニュー -->
+  <nav class="sub-nav" id="sub-nav-js">
+
+    <?php
+      wp_nav_menu(
+        array(
+          'theme_location' => 'place_sub',
+          'container' => false,
+          )
+        );
+        ?>
+
+  <ul class="sub-nav-icons">
+    <li class="sub-nav-icon"><a class="fab fa-facebook fa-3x" href="https://rua.jp/f/621195244594793" target=”_blank”></a></li>
+    <li class="sub-nav-icon"><a class="fab fa-instagram fa-3x" href="https://rua.jp/i/fuuske_life" target=”_blank”></a></li>
+    <li class="sub-nav-icon"><a class="fab fa-youtube fa-3x" href="https://www.youtube.com/channel/UCqmZWnDKLpt3QqZvcz6SkLg" target=”_blank”></a></li>
+  </ul>
+
+  <div class="close-img-area">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gnv_close.png" class="sub-nav-close" id="sub-nav-close-js">
+  </div>
+</nav>

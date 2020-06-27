@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <!-- 投稿一覧ページ  コンテンツセクション -->
+  <!-- 投稿一覧ページ  コンテンツセクション。 -->
   <section class="contents-page-single-archive">
     <div class="content-archive">
       <h2 class="txtxxl content-archive-title"><?php echo get_main_title(); ?></h2>

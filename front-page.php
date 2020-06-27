@@ -119,7 +119,7 @@
                 endif;	
               wp_reset_postdata(); ?>
 
-              <a href="http://fuuske-official-website.local/archives/video/" class="top-section-button video-all-button">View All</a>
+              <a href="http://fuuske.bubekiti.net/archives/video/" class="top-section-button video-all-button">View All</a>
 
 
 
