@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*
 Theme Name: Fuuske Official Website
 Theme URI: none
 Author: S.T.
@@ -110,6 +117,8 @@ p{
 
   header a:hover{
     background-color:rgb(95, 95, 95);
+    -webkit-transition: 0.5s ;
+    -o-transition: 0.5s ;
     transition: 0.5s ;
   }
 
@@ -170,8 +179,12 @@ p{
   }
 
   .main-image-area{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width:100%;
   }
 
@@ -245,6 +258,8 @@ p{
     .sns-area-top p{
       line-height:1.5em;
       color:#000;
+      background:-webkit-gradient(linear,left top, right top,color-stop(70%, #fff), to(#000));
+      background:-o-linear-gradient(left,#fff 70%, #000 100%);
       background:linear-gradient(to right,#fff 70%, #000 100%);
     }
 
@@ -307,9 +322,12 @@ p{
         text-align: center;
         overflow: hidden;
         font-weight: bold;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#d6d6d6));
+        background-image: -o-linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
         background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
         text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
-        box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+                box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
         border-bottom: solid 2px #b5b5b5;
         padding:0 20px;
         margin:50px auto;
@@ -317,8 +335,11 @@ p{
       }
 
       .top-section-button:active {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#fafafa));
+        background-image: -o-linear-gradient(#f1f1f1 0%, #fafafa 100%);
         background-image: linear-gradient(#f1f1f1 0%, #fafafa 100%);
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+                box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
         border-bottom: none;
       }
 
@@ -505,7 +526,8 @@ p{
   color:#000;
   min-height:calc(100vh - 300px);
   border-radius:8px;
-  box-shadow: 10px 10px 10px rgba(238, 233, 233, 0.4);
+  -webkit-box-shadow: 10px 10px 10px rgba(238, 233, 233, 0.4);
+          box-shadow: 10px 10px 10px rgba(238, 233, 233, 0.4);
 }
 
 .addtoany_share_save_container{
@@ -519,7 +541,9 @@ p{
   padding:0 10px;
   line-height:1.5em;
   border-radius: 5px;
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
 .content-single-area{
@@ -773,7 +797,9 @@ p{
     padding:0 10px;
     line-height:1.5em;
     border-radius: 5px;
-    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
   }
 
   .single-event-items{
@@ -858,14 +884,22 @@ p{
       left:0;
     width:100%;
     height:100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     opacity:70%;
   }
 
   .video-page-icon:hover{
     color:red;
+    -webkit-transition: 0.3s ;
+    -o-transition: 0.3s ;
     transition: 0.3s ;
   }
 
@@ -1498,10 +1532,11 @@ header{
 /*投稿記事 個別ページ*/
 .content-single{
   margin:100px 3px 20px;
-  padding:10px 15px;ƒ
+  padding:10px 15px;
   border-radius:5px;
   /* max-width:500px; */
-  box-shadow:none;
+  -webkit-box-shadow:none;
+          box-shadow:none;
 }
 
 .addtoany_share_save_container{
@@ -1630,7 +1665,9 @@ header{
     padding:0 10px;
     line-height:1.5em;
     border-radius: 5px;
-    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
   }
 
   .single-event-items{
